@@ -1,0 +1,25 @@
+# Xcode
+xcuserdata/
+
+# CocoaPods
+Pods/
+
+# Build products
+build/
+DerivedData/
+
+# Xcode project files
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+
+# Xcode workspace files
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.swp
+*~.nib

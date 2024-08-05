@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AB455830C0C765542AC8F1E /* Pods_UbitaStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41E03342CAC2ED35716FB0C /* Pods_UbitaStore.framework */; };
+		8C2A31822AE58E8500971C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A31812AE58E8500971C7A /* AppDelegate.swift */; };
+		8C2A31842AE58E8500971C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A31832AE58E8500971C7A /* SceneDelegate.swift */; };
+		8C2A31862AE58E8500971C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A31852AE58E8500971C7A /* ViewController.swift */; };
+		8C2A31892AE58E8500971C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2A31872AE58E8500971C7A /* Main.storyboard */; };
+		8C2A318B2AE58E8700971C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2A318A2AE58E8700971C7A /* Assets.xcassets */; };
+		8C2A318E2AE58E8700971C7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2A318C2AE58E8700971C7A /* LaunchScreen.storyboard */; };
+		8C7DA34E2AEA2A5800BF37A8 /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7DA34D2AEA2A5800BF37A8 /* Producto.swift */; };
+		8C9C01622AEA3BE200FDD8BB /* ProductoCarritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01612AEA3BE200FDD8BB /* ProductoCarritoTableViewCell.swift */; };
+		8C9C01642AEAC82C00FDD8BB /* CarritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01632AEAC82C00FDD8BB /* CarritoViewController.swift */; };
+		8C9C01662AEAE60500FDD8BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C01652AEAE60500FDD8BB /* GoogleService-Info.plist */; };
+		8C9C01682AEAEC0100FDD8BB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01672AEAEC0100FDD8BB /* MenuViewController.swift */; };
+		8C9C016A2AEAEF8D00FDD8BB /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01692AEAEF8D00FDD8BB /* RegistrarViewController.swift */; };
+		8C9C016D2AEB070B00FDD8BB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C016C2AEB070B00FDD8BB /* Util.swift */; };
+		8C9C01712AEB0ECC00FDD8BB /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01702AEB0ECC00FDD8BB /* FirebaseUtil.swift */; };
+		8C9C01732AEB134600FDD8BB /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01722AEB134600FDD8BB /* Categoria.swift */; };
+		8C9C01762AEB322800FDD8BB /* UbitaStoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01742AEB322800FDD8BB /* UbitaStoreDataModel.xcdatamodeld */; };
+		8C9C01792AEB369300FDD8BB /* CoredataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01782AEB369300FDD8BB /* CoredataUtil.swift */; };
+		8C9C017B2AEB70B400FDD8BB /* ProductoCategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C017A2AEB70B400FDD8BB /* ProductoCategoriaCollectionViewCell.swift */; };
+		8C9C01AA2AECBD6C00FDD8BB /* CuentaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01A92AECBD6C00FDD8BB /* CuentaViewController.swift */; };
+		8C9C01AC2AECC05900FDD8BB /* PedidoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01AB2AECC05900FDD8BB /* PedidoTableViewCell.swift */; };
+		8C9C01AE2AECD33300FDD8BB /* Pedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C01AD2AECD33300FDD8BB /* Pedido.swift */; };
+		8CB4A8082AE717C2004C5C5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8072AE717C2004C5C5E /* LoginViewController.swift */; };
+		8CB4A80B2AE73795004C5C5E /* ProductoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A80A2AE73795004C5C5E /* ProductoCollectionViewCell.swift */; };
+		8CB4A80E2AE739A9004C5C5E /* TiendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A80D2AE739A9004C5C5E /* TiendaViewController.swift */; };
+		8CB4A8102AE85419004C5C5E /* ProductoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A80F2AE85419004C5C5E /* ProductoDetalleViewController.swift */; };
+		8CB4A8132AE9F70F004C5C5E /* ExplorarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8122AE9F70F004C5C5E /* ExplorarViewController.swift */; };
+		8CB4A8162AE9F786004C5C5E /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8152AE9F786004C5C5E /* CategoriaCollectionViewCell.swift */; };
+		8CB4A8182AEA2377004C5C5E /* CategoriaDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4A8172AEA2377004C5C5E /* CategoriaDetalleViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F781A914F957EA5A195F888 /* Pods-UbitaStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UbitaStore.debug.xcconfig"; path = "Target Support Files/Pods-UbitaStore/Pods-UbitaStore.debug.xcconfig"; sourceTree = "<group>"; };
+		826365786FBEF326D3FDBC78 /* Pods-UbitaStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UbitaStore.release.xcconfig"; path = "Target Support Files/Pods-UbitaStore/Pods-UbitaStore.release.xcconfig"; sourceTree = "<group>"; };
+		8C2A317E2AE58E8500971C7A /* UbitaStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UbitaStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2A31812AE58E8500971C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C2A31832AE58E8500971C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C2A31852AE58E8500971C7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C2A31882AE58E8500971C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C2A318A2AE58E8700971C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C2A318D2AE58E8700971C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C2A318F2AE58E8700971C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C7DA34D2AEA2A5800BF37A8 /* Producto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
+		8C9C01612AEA3BE200FDD8BB /* ProductoCarritoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCarritoTableViewCell.swift; sourceTree = "<group>"; };
+		8C9C01632AEAC82C00FDD8BB /* CarritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewController.swift; sourceTree = "<group>"; };
+		8C9C01652AEAE60500FDD8BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C9C01672AEAEC0100FDD8BB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8C9C01692AEAEF8D00FDD8BB /* RegistrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewController.swift; sourceTree = "<group>"; };
+		8C9C016C2AEB070B00FDD8BB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		8C9C01702AEB0ECC00FDD8BB /* FirebaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
+		8C9C01722AEB134600FDD8BB /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
+		8C9C01752AEB322800FDD8BB /* UbitaStoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UbitaStoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		8C9C01782AEB369300FDD8BB /* CoredataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataUtil.swift; sourceTree = "<group>"; };
+		8C9C017A2AEB70B400FDD8BB /* ProductoCategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C9C01A92AECBD6C00FDD8BB /* CuentaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuentaViewController.swift; sourceTree = "<group>"; };
+		8C9C01AB2AECC05900FDD8BB /* PedidoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedidoTableViewCell.swift; sourceTree = "<group>"; };
+		8C9C01AD2AECD33300FDD8BB /* Pedido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedido.swift; sourceTree = "<group>"; };
+		8CB4A8072AE717C2004C5C5E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8CB4A80A2AE73795004C5C5E /* ProductoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCollectionViewCell.swift; sourceTree = "<group>"; };
+		8CB4A80D2AE739A9004C5C5E /* TiendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiendaViewController.swift; sourceTree = "<group>"; };
+		8CB4A80F2AE85419004C5C5E /* ProductoDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoDetalleViewController.swift; sourceTree = "<group>"; };
+		8CB4A8122AE9F70F004C5C5E /* ExplorarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorarViewController.swift; sourceTree = "<group>"; };
+		8CB4A8152AE9F786004C5C5E /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
+		8CB4A8172AEA2377004C5C5E /* CategoriaDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDetalleViewController.swift; sourceTree = "<group>"; };
+		D41E03342CAC2ED35716FB0C /* Pods_UbitaStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UbitaStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C2A317B2AE58E8500971C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB455830C0C765542AC8F1E /* Pods_UbitaStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8129199A5C88EC7CED7A54B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F781A914F957EA5A195F888 /* Pods-UbitaStore.debug.xcconfig */,
+				826365786FBEF326D3FDBC78 /* Pods-UbitaStore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C2A31752AE58E8500971C7A = {
+			isa = PBXGroup;
+			children = (
+				8C2A31802AE58E8500971C7A /* UbitaStore */,
+				8C2A317F2AE58E8500971C7A /* Products */,
+				8129199A5C88EC7CED7A54B9 /* Pods */,
+				BE9DBF91FDAE0BB0B275FE39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C2A317F2AE58E8500971C7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C2A317E2AE58E8500971C7A /* UbitaStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C2A31802AE58E8500971C7A /* UbitaStore */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C01A82AECBD4C00FDD8BB /* cuenta */,
+				8C9C016B2AEB06EF00FDD8BB /* util */,
+				8C9C01652AEAE60500FDD8BB /* GoogleService-Info.plist */,
+				8C9C01602AEA3BA900FDD8BB /* carrito */,
+				8CB4A8142AE9F769004C5C5E /* categorias */,
+				8CB4A8112AE9F6D2004C5C5E /* explorar */,
+				8CB4A80C2AE73986004C5C5E /* tienda */,
+				8CB4A8092AE7376C004C5C5E /* productos */,
+				8CB4A8062AE71769004C5C5E /* login */,
+				8C2A31812AE58E8500971C7A /* AppDelegate.swift */,
+				8C2A31832AE58E8500971C7A /* SceneDelegate.swift */,
+				8C2A31852AE58E8500971C7A /* ViewController.swift */,
+				8C2A31872AE58E8500971C7A /* Main.storyboard */,
+				8C2A318A2AE58E8700971C7A /* Assets.xcassets */,
+				8C2A318C2AE58E8700971C7A /* LaunchScreen.storyboard */,
+				8C2A318F2AE58E8700971C7A /* Info.plist */,
+				8C9C01672AEAEC0100FDD8BB /* MenuViewController.swift */,
+				8C9C01742AEB322800FDD8BB /* UbitaStoreDataModel.xcdatamodeld */,
+			);
+			path = UbitaStore;
+			sourceTree = "<group>";
+		};
+		8C9C01602AEA3BA900FDD8BB /* carrito */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C01612AEA3BE200FDD8BB /* ProductoCarritoTableViewCell.swift */,
+				8C9C01632AEAC82C00FDD8BB /* CarritoViewController.swift */,
+			);
+			path = carrito;
+			sourceTree = "<group>";
+		};
+		8C9C016B2AEB06EF00FDD8BB /* util */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C01772AEB367600FDD8BB /* coredataUtil */,
+				8C9C016F2AEB0E8900FDD8BB /* firebaseUtil */,
+				8C9C016C2AEB070B00FDD8BB /* Util.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		8C9C016F2AEB0E8900FDD8BB /* firebaseUtil */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C01702AEB0ECC00FDD8BB /* FirebaseUtil.swift */,
+			);
+			path = firebaseUtil;
+			sourceTree = "<group>";
+		};
+		8C9C01772AEB367600FDD8BB /* coredataUtil */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C01782AEB369300FDD8BB /* CoredataUtil.swift */,
+			);
+			path = coredataUtil;
+			sourceTree = "<group>";
+		};
+		8C9C01A82AECBD4C00FDD8BB /* cuenta */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C01A92AECBD6C00FDD8BB /* CuentaViewController.swift */,
+				8C9C01AB2AECC05900FDD8BB /* PedidoTableViewCell.swift */,
+				8C9C01AD2AECD33300FDD8BB /* Pedido.swift */,
+			);
+			path = cuenta;
+			sourceTree = "<group>";
+		};
+		8CB4A8062AE71769004C5C5E /* login */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4A8072AE717C2004C5C5E /* LoginViewController.swift */,
+				8C9C01692AEAEF8D00FDD8BB /* RegistrarViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		8CB4A8092AE7376C004C5C5E /* productos */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4A80A2AE73795004C5C5E /* ProductoCollectionViewCell.swift */,
+				8CB4A80F2AE85419004C5C5E /* ProductoDetalleViewController.swift */,
+				8C7DA34D2AEA2A5800BF37A8 /* Producto.swift */,
+				8C9C017A2AEB70B400FDD8BB /* ProductoCategoriaCollectionViewCell.swift */,
+			);
+			path = productos;
+			sourceTree = "<group>";
+		};
+		8CB4A80C2AE73986004C5C5E /* tienda */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4A80D2AE739A9004C5C5E /* TiendaViewController.swift */,
+			);
+			path = tienda;
+			sourceTree = "<group>";
+		};
+		8CB4A8112AE9F6D2004C5C5E /* explorar */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4A8122AE9F70F004C5C5E /* ExplorarViewController.swift */,
+			);
+			path = explorar;
+			sourceTree = "<group>";
+		};
+		8CB4A8142AE9F769004C5C5E /* categorias */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4A8152AE9F786004C5C5E /* CategoriaCollectionViewCell.swift */,
+				8CB4A8172AEA2377004C5C5E /* CategoriaDetalleViewController.swift */,
+				8C9C01722AEB134600FDD8BB /* Categoria.swift */,
+			);
+			path = categorias;
+			sourceTree = "<group>";
+		};
+		BE9DBF91FDAE0BB0B275FE39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D41E03342CAC2ED35716FB0C /* Pods_UbitaStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C2A317D2AE58E8500971C7A /* UbitaStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C2A31922AE58E8700971C7A /* Build configuration list for PBXNativeTarget "UbitaStore" */;
+			buildPhases = (
+				E908012C05B636F596CC9CC4 /* [CP] Check Pods Manifest.lock */,
+				8C2A317A2AE58E8500971C7A /* Sources */,
+				8C2A317B2AE58E8500971C7A /* Frameworks */,
+				8C2A317C2AE58E8500971C7A /* Resources */,
+				0D6D761FE606545BDC332DAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UbitaStore;
+			productName = UbitaStore;
+			productReference = 8C2A317E2AE58E8500971C7A /* UbitaStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C2A31762AE58E8500971C7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8C2A317D2AE58E8500971C7A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C2A31792AE58E8500971C7A /* Build configuration list for PBXProject "UbitaStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C2A31752AE58E8500971C7A;
+			productRefGroup = 8C2A317F2AE58E8500971C7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C2A317D2AE58E8500971C7A /* UbitaStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C2A317C2AE58E8500971C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2A318E2AE58E8700971C7A /* LaunchScreen.storyboard in Resources */,
+				8C9C01662AEAE60500FDD8BB /* GoogleService-Info.plist in Resources */,
+				8C2A318B2AE58E8700971C7A /* Assets.xcassets in Resources */,
+				8C2A31892AE58E8500971C7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D6D761FE606545BDC332DAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UbitaStore/Pods-UbitaStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UbitaStore/Pods-UbitaStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UbitaStore/Pods-UbitaStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E908012C05B636F596CC9CC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UbitaStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C2A317A2AE58E8500971C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9C01712AEB0ECC00FDD8BB /* FirebaseUtil.swift in Sources */,
+				8C7DA34E2AEA2A5800BF37A8 /* Producto.swift in Sources */,
+				8C9C01AA2AECBD6C00FDD8BB /* CuentaViewController.swift in Sources */,
+				8C9C01792AEB369300FDD8BB /* CoredataUtil.swift in Sources */,
+				8C9C016A2AEAEF8D00FDD8BB /* RegistrarViewController.swift in Sources */,
+				8CB4A8182AEA2377004C5C5E /* CategoriaDetalleViewController.swift in Sources */,
+				8C9C016D2AEB070B00FDD8BB /* Util.swift in Sources */,
+				8C9C01732AEB134600FDD8BB /* Categoria.swift in Sources */,
+				8CB4A8082AE717C2004C5C5E /* LoginViewController.swift in Sources */,
+				8C9C01682AEAEC0100FDD8BB /* MenuViewController.swift in Sources */,
+				8C9C01642AEAC82C00FDD8BB /* CarritoViewController.swift in Sources */,
+				8C2A31862AE58E8500971C7A /* ViewController.swift in Sources */,
+				8C9C01AE2AECD33300FDD8BB /* Pedido.swift in Sources */,
+				8C9C01622AEA3BE200FDD8BB /* ProductoCarritoTableViewCell.swift in Sources */,
+				8C9C01762AEB322800FDD8BB /* UbitaStoreDataModel.xcdatamodeld in Sources */,
+				8C9C017B2AEB70B400FDD8BB /* ProductoCategoriaCollectionViewCell.swift in Sources */,
+				8C2A31822AE58E8500971C7A /* AppDelegate.swift in Sources */,
+				8CB4A8132AE9F70F004C5C5E /* ExplorarViewController.swift in Sources */,
+				8CB4A8102AE85419004C5C5E /* ProductoDetalleViewController.swift in Sources */,
+				8C9C01AC2AECC05900FDD8BB /* PedidoTableViewCell.swift in Sources */,
+				8CB4A80B2AE73795004C5C5E /* ProductoCollectionViewCell.swift in Sources */,
+				8C2A31842AE58E8500971C7A /* SceneDelegate.swift in Sources */,
+				8CB4A80E2AE739A9004C5C5E /* TiendaViewController.swift in Sources */,
+				8CB4A8162AE9F786004C5C5E /* CategoriaCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C2A31872AE58E8500971C7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C2A31882AE58E8500971C7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C2A318C2AE58E8700971C7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C2A318D2AE58E8700971C7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C2A31902AE58E8700971C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C2A31912AE58E8700971C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C2A31932AE58E8700971C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F781A914F957EA5A195F888 /* Pods-UbitaStore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UbitaStore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.cibertec.UbitaStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C2A31942AE58E8700971C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 826365786FBEF326D3FDBC78 /* Pods-UbitaStore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UbitaStore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.cibertec.UbitaStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C2A31792AE58E8500971C7A /* Build configuration list for PBXProject "UbitaStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2A31902AE58E8700971C7A /* Debug */,
+				8C2A31912AE58E8700971C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C2A31922AE58E8700971C7A /* Build configuration list for PBXNativeTarget "UbitaStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2A31932AE58E8700971C7A /* Debug */,
+				8C2A31942AE58E8700971C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C9C01742AEB322800FDD8BB /* UbitaStoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C9C01752AEB322800FDD8BB /* UbitaStoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 8C9C01752AEB322800FDD8BB /* UbitaStoreDataModel.xcdatamodel */;
+			path = UbitaStoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8C2A31762AE58E8500971C7A /* Project object */;
+}
